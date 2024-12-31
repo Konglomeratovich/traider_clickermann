@@ -617,83 +617,83 @@ WHEELUP(25)
       waitms(500 + $S_CORR)	  	 	       
 KEYUP(#CTRL)     
 			waitms(200 + $S_CORR)   
-//check grafs	
+//check graphs	
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,195)   //bars
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,235)   //candles
       waitms(2000 + $S_CORR)		
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,275)   //hollow candles
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,325)   //line
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,370)   //line with markers
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,415)   //step line
       waitms(2000 + $S_CORR)		
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,465)   //area
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,505)   //HLC area
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,545)   //baseline
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,595)   //columns
       waitms(2000 + $S_CORR)		
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,640)   //high-low
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,690)   //heikin ashi
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
-		LCLICK(2515,155)   //click on the grafs
+		LCLICK(2515,155)   //click on the graphs
       waitms(2000 + $S_CORR)
 		LCLICK(2515,235)   //candles
       waitms(2000 + $S_CORR)
