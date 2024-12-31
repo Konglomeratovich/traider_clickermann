@@ -617,7 +617,7 @@ WHEELUP(25)
       waitms(500 + $S_CORR)	  	 	       
 KEYUP(#CTRL)     
 			waitms(200 + $S_CORR)   
-//check graphs	
+//check the Graphs	
       waitms(2000 + $S_CORR)
 mouse_move(2515,155)
       waitms(2000 + $S_CORR)
