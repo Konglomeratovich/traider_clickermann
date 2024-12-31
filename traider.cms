@@ -1,0 +1,1193 @@
+﻿// 04.12.2024
+#name "FDCTest"
+#include "MOVE.cms"
+#include "FDCTest_Login.cms"
+// секция входа в личный кабинет, смены темы и выхода из личного кабинета
+// section for logging in to your Corporate Client account, theme of webtrader and reload the page and logout your Corporate Client account
+$S_CORR = (RND(100,1000))
+FDCTest_Login()   //login
+      waitms(10000 + $S_CORR)
+mouse_move(3594,111)//mouse_move the cursor to the theme change icon of webtrader
+      waitms(1500 + $S_CORR)
+   LCLICK(3594,111)
+      waitms(1500 + $S_CORR)   
+mouse_move(3618,194)
+      waitms(1500 + $S_CORR)     
+   LCLICK(3618,194)   //click light theme
+       waitms(3500 + $S_CORR)
+   KEYPRESS(#F5)      //Reload page
+      waitms(3500 + $S_CORR)
+mouse_move(3594,111)//mouse_move the cursor to the theme change icon of webtrader
+      waitms(3500 + $S_CORR)
+   LCLICK(3594,111)
+      waitms(1500 + $S_CORR)      
+mouse_move(3626,153)
+      waitms(2500 + $S_CORR)     
+   LCLICK(3626,153)   //click dark theme
+       waitms(3500 + $S_CORR)
+   KEYPRESS(#F5)      //Reload page
+//проходимся по меню пользователя
+//user menu section
+      waitms(3000 + $S_CORR)
+mouse_move(2528,112)
+      waitms(3000 + $S_CORR)
+		LCLICK(2528,112)   //click the sell market
+      waitms(1500 + $S_CORR)
+mouse_move(2760,350)
+      waitms(1500 + $S_CORR)   	
+		 LCLICK(2760,350)    //click symbol
+      waitms(1500 + $S_CORR)   	
+		 LCLICK(2760,350)    //click symbol 
+      waitms(1500 + $S_CORR)		      
+mouse_move(2949,420)
+      waitms(1500 + $S_CORR)   	
+		 LCLICK(2949,420)    //click buy	 		 
+      waitms(1500 + $S_CORR)
+mouse_move(2806,420)
+      waitms(1500 + $S_CORR)      
+   	LCLICK(2806,420)    //click sell
+      waitms(1500 + $S_CORR)
+   	DBLCLICK(2821,617)    //change t/p
+      	waitms(200 + $S_CORR)
+   	DBLCLICK(2821,617)    //change t/p
+      waitms(1500 + $S_CORR)
+		DBLCLICK(3000,617)    //change s/l
+      	waitms(200 + $S_CORR)		
+   	DBLCLICK(3000,617)    //change s/l
+		  waitms(1500 + $S_CORR)
+mouse_move(2876,750)
+      waitms(2000 + $S_CORR)
+		LCLICK(2876,750)   //click sell
+      waitms(1500 + $S_CORR)		  
+mouse_move(2876,461)
+      waitms(3000 + $S_CORR)
+		LCLICK(2876,461)   //click limit
+      waitms(1500 + $S_CORR)
+		DBLCLICK(2865,465)    //change open price
+      waitms(200 + $S_CORR)
+   	DBLCLICK(2865,465)    //change open price
+      waitms(1000 + $S_CORR)
+mouse_move(2945,470)  	
+      waitms(1500 + $S_CORR)
+		LCLICK(2945,470)      //change bid
+		  waitms(1500 + $S_CORR)
+mouse_move(2950,703)  	
+      waitms(1500 + $S_CORR)
+		LCLICK(2950,703)      //bid+3
+		  waitms(1500 + $S_CORR)			    
+mouse_move(2968,403)
+      waitms(2000 + $S_CORR)
+		LCLICK(2968,403)   //click stop
+      waitms(1500 + $S_CORR)
+mouse_move(2793,403)
+      waitms(2000 + $S_CORR)
+		LCLICK(2793,403)   //click market
+      waitms(1500 + $S_CORR)						      				        
+mouse_move(3040,330)
+      waitms(2000 + $S_CORR)
+		LCLICK(3040,330)   //close the sell market
+      waitms(1500 + $S_CORR)   
+mouse_move(2661,112)
+      waitms(2000 + $S_CORR)
+		LCLICK(2661,112)   //click the buy market
+      waitms(1500 + $S_CORR)
+mouse_move(2760,350)
+      waitms(1500 + $S_CORR)   	
+		 LCLICK(2760,350)    //click symbol
+      waitms(1500 + $S_CORR)   	
+		 LCLICK(2760,350)    //click symbol
+      waitms(1500 + $S_CORR)
+mouse_move(2806,420)
+      waitms(1500 + $S_CORR)					        
+		LCLICK(2806,420)    //click sell
+      waitms(1500 + $S_CORR)
+   LCLICK(2949,420)    //click buy
+      waitms(1500 + $S_CORR)
+   	DBLCLICK(2821,617)    //change t/p
+      	waitms(200 + $S_CORR)
+   	DBLCLICK(2821,617)    //change t/p
+      waitms(1500 + $S_CORR)
+		DBLCLICK(3000,617)    //change s/l
+      	waitms(200 + $S_CORR)		
+   	DBLCLICK(3000,617)    //change s/l
+		  waitms(1500 + $S_CORR)
+mouse_move(2876,750)
+      waitms(2000 + $S_CORR)
+		LCLICK(2876,750)   //click buy
+     waitms(2000 + $S_CORR)
+mouse_move(2876,461)
+      waitms(3000 + $S_CORR)
+		LCLICK(2876,461)   //click limit
+      waitms(1500 + $S_CORR)
+		DBLCLICK(2865,465)    //change open price
+      waitms(200 + $S_CORR)
+   	DBLCLICK(2865,465)    //change open price
+      waitms(1000 + $S_CORR)
+mouse_move(2945,470)  	
+      waitms(1500 + $S_CORR)
+		LCLICK(2945,470)      //change ask
+		  waitms(1500 + $S_CORR)
+mouse_move(2950,703)  	
+      waitms(1500 + $S_CORR)
+		LCLICK(2950,703)      //ask+3
+		  waitms(1500 + $S_CORR)			    
+mouse_move(2968,403)
+      waitms(2000 + $S_CORR)
+		LCLICK(2968,403)   //click stop
+      waitms(1500 + $S_CORR)
+mouse_move(2793,403)
+      waitms(2000 + $S_CORR)
+		LCLICK(2793,403)   //click market
+      waitms(1500 + $S_CORR)						      				        
+mouse_move(3040,330)
+      waitms(2000 + $S_CORR)
+		LCLICK(3040,330)   //close the buy market
+      waitms(1500 + $S_CORR)
+mouse_move(2794,112)
+      waitms(2000 + $S_CORR)
+		LCLICK(2794,112)   //click to the pending
+      waitms(1500 + $S_CORR)
+mouse_move(2862,465)
+      waitms(2000 + $S_CORR)
+		DBLCLICK(2862,475)   //open price down
+		waitms(500 + $S_CORR)
+		DBLCLICK(2862,475)   //open price down
+		waitms(500 + $S_CORR)
+		DBLCLICK(2862,475)   //open price down
+		waitms(500 + $S_CORR)		
+mouse_move(2878,805)
+      waitms(2000 + $S_CORR)
+		LCLICK(2878,805)   //click buy
+      waitms(1500 + $S_CORR)
+mouse_move(3040,280)
+      waitms(2000 + $S_CORR)
+		LCLICK(3040,280)   //close the pending	  
+mouse_move(3151,112)
+      waitms(2000 + $S_CORR)
+		LCLICK(3151,112)   //click on the layot
+      waitms(1500 + $S_CORR)
+mouse_move(3162,170)
+      waitms(2000 + $S_CORR)
+		LCLICK(3162,170)   //click on the layot (positions)
+      waitms(1500 + $S_CORR)
+mouse_move(3148,200)
+      waitms(2000 + $S_CORR)
+		LCLICK(3148,200)   //click on the layot (quotes)
+      waitms(1500 + $S_CORR)
+mouse_move(3166,230)
+      waitms(2000 + $S_CORR)
+		LCLICK(3166,230)   //click on the layot (chart only)
+      waitms(1500 + $S_CORR)
+mouse_move(3149,260)
+      waitms(2000 + $S_CORR)
+		LCLICK(3149,260)   //click on the layot (positions only)
+      waitms(1500 + $S_CORR)
+mouse_move(3152,290)
+      waitms(2000 + $S_CORR)
+		LCLICK(3152,290)   //click on the layot (quotes and positions)
+      waitms(1500 + $S_CORR)
+mouse_move(3146,142)
+      waitms(2000 + $S_CORR)
+		LCLICK(3146,142)   //click on the layot (default)
+      waitms(1500 + $S_CORR)
+mouse_move(3374,313)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(3374,313)    //switcher for Market Depth
+      waitms(1500 + $S_CORR)
+mouse_move(3504,167)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(3504,167)
+      waitms(1500 + $S_CORR)
+mouse_move(3504,460)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(3504,460)    //change the symbol on Market Depth
+      waitms(1500 + $S_CORR)
+mouse_move(3030,110)
+      waitms(2000 + $S_CORR)
+	  LCLICK(3030,110) 		    // go to settings
+      waitms(1500 + $S_CORR)
+mouse_move(3047,366)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(3047,366)	     // switch on one click trading
+      waitms(1500 + $S_CORR)
+mouse_move(2880,960)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2880,960)	  
+      waitms(1500 + $S_CORR) //save      
+mouse_move(3737,430)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(3737,430)    //buy
+      waitms(1500 + $S_CORR)
+mouse_move(3813,165)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(3813,165)    //close the market depth		 	   	
+      waitms(1500 + $S_CORR)
+mouse_move(3030,110)
+      waitms(2000 + $S_CORR)
+	  LCLICK(3030,110) 		    // go to settings
+      waitms(1500 + $S_CORR)
+mouse_move(3047,366)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(3047,366)	     // switch off one click trading
+      waitms(1500 + $S_CORR)
+mouse_move(2880,960)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2880,960)	  
+      waitms(1500 + $S_CORR) //save       
+mouse_move(2200,188)
+      waitms(2000 + $S_CORR)
+		LCLICK(2200,188)   //click on the favorites
+      waitms(1500 + $S_CORR)
+mouse_move(2031,188)
+      waitms(2000 + $S_CORR)
+		LCLICK(2031,188)   //click on the all symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2288,152)
+      waitms(2000 + $S_CORR)
+		LCLICK(2288,152)   //click on settings symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2248,200)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2248,200)   //switch on forex symbols
+      waitms(1500 + $S_CORR)
+		LCLICK(2248,200)
+      waitms(1500 + $S_CORR)
+mouse_move(2249,234)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2249,234)    //switch on metals symbols
+      waitms(500 + $S_CORR)
+		LCLICK(2249,234)
+      waitms(1500 + $S_CORR)
+mouse_move(2247,266)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2247,266)   //switch on cryptos symbols
+      waitms(500 + $S_CORR)
+		LCLICK(2247,266)
+      waitms(1500 + $S_CORR)
+mouse_move(2249,300)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2249,300)   //switch on equities symbols
+      waitms(500 + $S_CORR)
+		LCLICK(2249,300)
+      waitms(1500 + $S_CORR)
+mouse_move(2240,330)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2240,330)    //switch on indices symbols
+      waitms(500 + $S_CORR)
+		LCLICK(2240,330)
+      waitms(1500 + $S_CORR)
+mouse_move(2246,360)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2246,360)    //switch on energies symbols
+      waitms(500 + $S_CORR)
+		LCLICK(2246,360)
+      waitms(1500 + $S_CORR)	
+mouse_move(2288,152)
+      waitms(2000 + $S_CORR)
+		LCLICK(2288,152)   //click on settings symbols
+      waitms(1500 + $S_CORR)
+//switch off all symbols
+mouse_move(2288,152)
+      waitms(2000 + $S_CORR)
+		LCLICK(2288,152)   //click on settings symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2248,200)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2248,200)   //switch off forex symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2249,234)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2249,234)    //switch off metals symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2247,266)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2247,266)   //switch off cryptos symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2249,300)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2249,300)   //switch off equities symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2240,330)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2240,330)    //switch off indices symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2246,360)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2246,360)    //switch off energies symbols
+      waitms(1500 + $S_CORR)	
+mouse_move(2288,152)
+      waitms(2000 + $S_CORR)
+		LCLICK(2288,152)   //click on settings symbols
+      waitms(1500 + $S_CORR)
+//switch on all symbols
+mouse_move(2288,152)
+      waitms(2000 + $S_CORR)
+		LCLICK(2288,152)   //click on settings symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2246,360)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2246,360)    //switch on energies symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2240,330)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2240,330)    //switch on indices symbols
+      waitms(1500 + $S_CORR)	  
+mouse_move(2249,300)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2249,300)   //switch on equities symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2247,266)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2247,266)   //switch on cryptos symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2249,234)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2249,234)    //switch on metals symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2248,200)
+      waitms(2000 + $S_CORR)
+ 		LCLICK(2248,200)   //switch on forex symbols
+      waitms(1500 + $S_CORR)
+	  mouse_move(2288,152)
+      waitms(2000 + $S_CORR)
+		LCLICK(2288,152)   //click on settings symbols
+      waitms(1500 + $S_CORR)
+mouse_move(2126,453)
+      waitms(2000 + $S_CORR)
+		LCLICK(2126,453)   //click on the symbol
+      waitms(1500 + $S_CORR)
+mouse_move(2260,505)
+      waitms(2000 + $S_CORR)
+		DBLCLICK(2260,505)   //click volume UP
+      waitms(1500 + $S_CORR)
+mouse_move(2260,523)
+      waitms(2000 + $S_CORR)
+		DBLCLICK(2260,523)   //click volume down
+      waitms(1500 + $S_CORR)
+mouse_move(2126,453)
+      waitms(2000 + $S_CORR)
+		LCLICK(2126,453)   //click on the symbol	  
+//click to the positions
+      waitms(2000 + $S_CORR)
+mouse_move(2387,743)
+waitms(2401 + $S_CORR)
+  LCLICK(2387,743)//contest stats
+waitms(1007 + $S_CORR)
+  mouse_move(2463,743)
+waitms(101 + $S_CORR)
+  LCLICK(2463,743)//positions
+waitms(1197 + $S_CORR)
+  mouse_move(2545,743)
+waitms(80 + $S_CORR)
+  LCLICK(2545,743)//pending orders
+waitms(869 + $S_CORR)
+  mouse_move(2696,743)
+waitms(101 + $S_CORR)
+  LCLICK(2696,743)//trade history
+waitms(874 + $S_CORR)
+  mouse_move(2812,743)
+waitms(112 + $S_CORR)
+  LCLICK(2812,743)//transactions
+waitms(816 + $S_CORR)
+  mouse_move(2917,743)
+waitms(93 + $S_CORR)
+  LCLICK(2917,743)//alerts
+waitms(773 + $S_CORR)
+  mouse_move(2993,743)
+waitms(114 + $S_CORR)
+  LCLICK(2993,743)//messages
+waitms(1126 + $S_CORR)
+  mouse_move(2914,736)
+waitms(105 + $S_CORR)
+  LCLICK(2914,743)//alerts
+waitms(735 + $S_CORR)
+  mouse_move(2826,743)
+waitms(135 + $S_CORR)
+  LCLICK(2826,743)//transactions
+waitms(758 + $S_CORR)
+  mouse_move(2710,743)
+waitms(123 + $S_CORR)
+  LCLICK(2710,743)//trade history
+waitms(840 + $S_CORR)
+  mouse_move(2592,743)
+waitms(124 + $S_CORR)
+  LCLICK(2592,743)//pending orders
+waitms(745 + $S_CORR)
+  mouse_move(2495,743)
+waitms(104 + $S_CORR)
+  LCLICK(2495,743)//positions
+waitms(884 + $S_CORR)
+  mouse_move(2406,743)
+waitms(151 + $S_CORR)
+  LCLICK(2406,743)//contest stats
+waitms(2420 + $S_CORR)
+//size of the chart
+mouse_move(2380,693)
+waitms(137 + $S_CORR)
+  LCLICK(2380,693)//5 years
+waitms(1524 + $S_CORR)
+  mouse_move(2407,693)
+waitms(137 + $S_CORR)
+  LCLICK(2407,693)//1 year
+waitms(1524 + $S_CORR)
+  mouse_move(2444,693)
+waitms(120 + $S_CORR)
+  LCLICK(2444,693)//3 months
+waitms(1477 + $S_CORR)
+  mouse_move(2467,693)
+waitms(130 + $S_CORR)
+  LCLICK(2467,693)//1 month
+waitms(3249 + $S_CORR)
+  mouse_move(2494,693)
+waitms(100 + $S_CORR)
+  LCLICK(2494,693)//5 days
+waitms(2493 + $S_CORR)
+  mouse_move(2518,693)
+waitms(102 + $S_CORR)
+  LCLICK(2518,693)//1 day
+waitms(4615 + $S_CORR)
+  mouse_move(2493,693)
+waitms(103 + $S_CORR)
+  LCLICK(2493,693)//5 days
+waitms(7500 + $S_CORR)
+mouse_move(2957,439)
+      waitms(3500 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)
+WHEELUP(25)
+   waitms(200 + $S_CORR)   
+      waitms(1000 + $S_CORR)
+//open chart with the symbol you chose from Favorites
+mouse_move(2200,189)
+      waitms(2000 + $S_CORR)
+	LCLICK(2200,189)   //click on the favorites
+      waitms(500 + $S_CORR)
+    LCLICK(2285,265)
+      waitms(2500 + $S_CORR)
+   LCLICK(2285,305)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,355)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,437)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,481)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,561)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,605)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,689)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,735)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,813)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,857)	      
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,941)
+      waitms(5000 + $S_CORR)
+   LCLICK(2285,305)
+      waitms(2500 + $S_CORR)   
+mouse_move(2031,187)
+      waitms(2000 + $S_CORR)
+		LCLICK(2031,187)   //click on the all symbols
+      waitms(1500 + $S_CORR)
+//check chart
+//minutes
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+mouse_move(2464,200)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,200)   //minimize the minutes
+   		waitms(500 + $S_CORR)
+		LCLICK(2464,200)   //expand the minutes		
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,230)   //1 m
+   		waitms(2000 + $S_CORR)
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,260)   //5 m
+   		waitms(500 + $S_CORR)		
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,290)   //15 m
+   		waitms(500 + $S_CORR)		
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,325)   //30 m
+   		waitms(500 + $S_CORR)					
+//hours
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+   		waitms(500 + $S_CORR)		
+mouse_move(2464,365)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,365)   //minimize the hours
+   		waitms(500 + $S_CORR)
+		LCLICK(2464,365)   //expand the hours		
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,395)   //1 h
+   		waitms(500 + $S_CORR)		
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,425)   //4 h
+   		waitms(500 + $S_CORR)		
+//days
+      waitms(2000 + $S_CORR)      
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+   		waitms(500 + $S_CORR)			
+mouse_move(2464,465)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,465)   //minimize the days
+   		waitms(500 + $S_CORR)
+		LCLICK(2464,465)   //expand the days		
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,500)   //1 d
+   		waitms(500 + $S_CORR)		
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,525)   //1 w
+   		waitms(500 + $S_CORR)		
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,560)   //1 mn
+   		waitms(500 + $S_CORR)		
+mouse_move(2464,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,155)   //click on the minutes
+   		waitms(500 + $S_CORR)			
+mouse_move(2464,325)
+      waitms(2000 + $S_CORR)
+		LCLICK(2464,325)   //30 m
+		waitms(5000 + $S_CORR)		
+//change the scale
+mouse_move(3014,452)
+      waitms(5000 + $S_CORR)
+KEYDOWN(#CTRL)
+      waitms(500 + $S_CORR)
+WHEELUP(25)
+      waitms(500 + $S_CORR)
+WHEELUP(25)
+   waitms(500 + $S_CORR)
+WHEELUP(25)
+   waitms(500 + $S_CORR)
+WHEELUP(25)
+   waitms(500 + $S_CORR)
+WHEELUP(25)
+   waitms(500 + $S_CORR)	
+WHEELUP(25)
+      waitms(500 + $S_CORR)
+WHEELUP(25)
+      waitms(500 + $S_CORR)
+WHEELUP(25)
+      waitms(500 + $S_CORR)
+WHEELUP(25)
+      waitms(500 + $S_CORR)
+WHEELUP(25)
+      waitms(500 + $S_CORR)	  	 	       
+KEYUP(#CTRL)     
+			waitms(200 + $S_CORR)   
+//check the Graphs	
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,195)   //bars
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,235)   //candles
+      waitms(2000 + $S_CORR)		
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,275)   //hollow candles
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,325)   //line
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,370)   //line with markers
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,415)   //step line
+      waitms(2000 + $S_CORR)		
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,465)   //area
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,505)   //HLC area
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,545)   //baseline
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,595)   //columns
+      waitms(2000 + $S_CORR)		
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,640)   //high-low
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,690)   //heikin ashi
+      waitms(2000 + $S_CORR)
+mouse_move(2515,155)
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,155)   //click on the graphs
+      waitms(2000 + $S_CORR)
+		LCLICK(2515,235)   //candles
+      waitms(2000 + $S_CORR)
+//alerts
+mouse_move(2700,160)
+      waitms(1500 + $S_CORR)     
+   LCLICK(2700,160)
+mouse_move(3003,420)
+      waitms(1500 + $S_CORR)     
+   DBLCLICK(3003,420)//change the alert price
+      waitms(200 + $S_CORR)	 	 
+   DBLCLICK(3003,420)//change the alert price
+mouse_move(2950,743)
+      waitms(1500 + $S_CORR)     
+   LCLICK(2950,743)//create the alert
+	  waitms(5500 + $S_CORR)
+mouse_move(2884,615)
+      waitms(2000 + $S_CORR)     
+   LCLICK(2884,615)//ok
+//bid
+mouse_move(2826,155)
+      waitms(1500 + $S_CORR)     
+   LCLICK(2826,155)
+//ask
+mouse_move(2770,155)
+      waitms(1500 + $S_CORR)     
+   LCLICK(2770,155)
+mouse_move(3025,112)
+      waitms(2000 + $S_CORR)
+//settings	  
+waitms(2355 + $S_CORR)
+ mouse_move(3009,112)
+waitms(249 + $S_CORR)
+  LCLICK(3009,112)//open settings
+waitms(2592 + $S_CORR)
+ mouse_move(2829,548)
+waitms(99 + $S_CORR)
+  LCLICK(2829,548)//change default amount
+waitms(2531 + $S_CORR)
+  keyDown(17)
+waitms(0 + $S_CORR)
+  keyDown(162)
+waitms(253 + $S_CORR)
+  keyDown(65)
+waitms(133 + $S_CORR)
+  keyUp(65)
+waitms(18 + $S_CORR)
+  keyUp(17)
+waitms(1 + $S_CORR)
+  keyUp(162)
+waitms(1235 + $S_CORR)
+  keyDown(97)
+waitms(70 + $S_CORR)
+  keyUp(97)
+waitms(476 + $S_CORR)
+  keyDown(96)
+waitms(64 + $S_CORR)
+  keyUp(96)
+waitms(241 + $S_CORR)
+  keyDown(96)
+waitms(64 + $S_CORR)
+  keyUp(96)
+waitms(392 + $S_CORR)
+  keyDown(96)
+waitms(60 + $S_CORR)
+  keyUp(96)
+waitms(2920 + $S_CORR)
+ mouse_move(2851,962)
+waitms(114 + $S_CORR)
+  LCLICK(2851,962)//save
+waitms(3322 + $S_CORR)
+ mouse_move(2185,304)
+waitms(96 + $S_CORR)
+  LCLICK(2185,304)//click on symbol
+waitms(2708 + $S_CORR)
+ mouse_move(2183,416)
+waitms(104 + $S_CORR)
+  LCLICK(2183,416)//click buy
+waitms(4239 + $S_CORR)
+ mouse_move(2851,750)
+waitms(108 + $S_CORR)
+  LCLICK(2851,750)//click buy
+waitms(7429 + $S_CORR)
+ mouse_move(3037,333)
+waitms(117 + $S_CORR)
+  LCLICK(3037,333)//click close
+waitms(1761 + $S_CORR)
+ mouse_move(3017,112)
+waitms(115 + $S_CORR)
+  LCLICK(3017,112)//open settings
+waitms(4714 + $S_CORR)
+ mouse_move(2745,688)
+waitms(97 + $S_CORR)
+  LCLICK(2745,688)//change default s/l
+waitms(1178 + $S_CORR)
+  keyDown(162)
+waitms(1 + $S_CORR)
+  keyDown(17)
+waitms(248 + $S_CORR)
+  keyDown(65)
+waitms(152 + $S_CORR)
+  keyUp(65)
+waitms(5 + $S_CORR)
+  keyUp(17)
+waitms(0 + $S_CORR)
+  keyUp(162)
+waitms(990 + $S_CORR)
+  keyDown(101)
+waitms(53 + $S_CORR)
+  keyUp(101)
+waitms(248 + $S_CORR)
+  keyDown(96)
+waitms(65 + $S_CORR)
+  keyUp(96)
+waitms(3005 + $S_CORR)
+ mouse_move(3045,370)
+waitms(93 + $S_CORR)
+  LCLICK(3045,368)//switch on the one click trading
+waitms(2042 + $S_CORR)
+ mouse_move(2827,952)
+waitms(88 + $S_CORR)
+  LCLICK(2825,952)//click save
+waitms(3155 + $S_CORR)
+ mouse_move(2189,550)
+waitms(97 + $S_CORR)
+  LCLICK(2189,550)//click on the symbol
+waitms(5178 + $S_CORR)
+ mouse_move(2013,558)
+waitms(107 + $S_CORR)
+  LCLICK(2013,558)//click sell
+waitms(2500 + $S_CORR)
+ mouse_move(2480,735)
+waitms(88 + $S_CORR)
+  LCLICK(2480,735)//move to the positions
+waitms(2886 + $S_CORR)
+ mouse_move(3810,815)
+waitms(88 + $S_CORR)
+  LCLICK(3810,815)//click to close order
+waitms(2886 + $S_CORR)
+ mouse_move(3011,112)
+waitms(88 + $S_CORR)
+  LCLICK(3011,112)//open settings
+waitms(2886 + $S_CORR)
+ mouse_move(3051,361)
+waitms(104 + $S_CORR)
+  LCLICK(3051,361)//switch off the one click trading
+waitms(1347 + $S_CORR)
+ mouse_move(2775,776)
+waitms(106 + $S_CORR)
+  LCLICK(2775,776)//change default t/p
+waitms(967 + $S_CORR)
+  keyDown(162)
+waitms(1 + $S_CORR)
+  keyDown(17)
+waitms(234 + $S_CORR)
+  keyDown(65)
+waitms(137 + $S_CORR)
+  keyUp(65)
+waitms(6 + $S_CORR)
+  keyUp(162)
+waitms(0 + $S_CORR)
+  keyUp(17)
+waitms(886 + $S_CORR)
+  keyDown(101)
+waitms(52 + $S_CORR)
+  keyUp(101)
+waitms(222 + $S_CORR)
+  keyDown(96)
+waitms(86 + $S_CORR)
+  keyUp(96)
+waitms(2406 + $S_CORR)
+ mouse_move(3035,410)
+waitms(87 + $S_CORR)
+  LCLICK(3035,410)//switch on the use automatic trade sizing
+waitms(2931 + $S_CORR)
+ mouse_move(2741,550)
+waitms(92 + $S_CORR)
+  LCLICK(2741,550)//change the default percentage of account risk
+waitms(1034 + $S_CORR)
+  keyDown(162)
+waitms(1 + $S_CORR)
+  keyDown(17)
+waitms(235 + $S_CORR)
+  keyDown(65)
+waitms(123 + $S_CORR)
+  keyUp(17)
+waitms(0 + $S_CORR)
+  keyUp(162)
+waitms(14 + $S_CORR)
+  keyUp(65)
+waitms(896 + $S_CORR)
+  keyDown(97)
+waitms(101 + $S_CORR)
+  keyUp(97)
+waitms(2797 + $S_CORR)
+ mouse_move(2809,959)
+waitms(122 + $S_CORR)
+  LCLICK(2809,959)//save
+waitms(3648 + $S_CORR)
+ mouse_move(2187,786)
+waitms(106 + $S_CORR)
+  LCLICK(2187,786)//click on the symbol
+waitms(1164 + $S_CORR)
+ mouse_move(2187,786)
+waitms(110 + $S_CORR)
+  LCLICK(2187,786)//click buy
+waitms(6935 + $S_CORR)
+ mouse_move(2859,744)
+waitms(140 + $S_CORR)
+  LCLICK(2859,744)//click buy
+waitms(4584 + $S_CORR)
+ mouse_move(3041,333)
+waitms(118 + $S_CORR)
+  LCLICK(3041,333)//click close
+waitms(2422 + $S_CORR)
+ mouse_move(3023,112)
+waitms(113 + $S_CORR)
+  LCLICK(3023,112)//open settings
+waitms(2936 + $S_CORR)
+ mouse_move(3051,420)
+waitms(94 + $S_CORR)
+  LCLICK(3049,420)//switch off the use automatic trade sizing
+waitms(1806 + $S_CORR)
+ mouse_move(3051,468)
+waitms(105 + $S_CORR)
+  LCLICK(3051,468)//switch on the lot tradinf
+waitms(1887 + $S_CORR)
+ mouse_move(2777,552)
+waitms(127 + $S_CORR)
+  LCLICK(2777,552)//change default lot
+waitms(1392 + $S_CORR)
+  keyDown(17)
+waitms(0 + $S_CORR)
+  keyDown(162)
+waitms(264 + $S_CORR)
+  keyDown(65)
+waitms(152 + $S_CORR)
+  keyUp(17)
+waitms(0 + $S_CORR)
+  keyUp(162)
+waitms(16 + $S_CORR)
+  keyUp(65)
+waitms(2292 + $S_CORR)
+  keyDown(96)
+waitms(64 + $S_CORR)
+  keyUp(96)
+waitms(718 + $S_CORR)
+  keyDown(190)
+waitms(68 + $S_CORR)
+  keyUp(190)
+waitms(814 + $S_CORR)
+  keyDown(98)
+waitms(83 + $S_CORR)
+  keyUp(98)
+waitms(1174 + $S_CORR)
+  keyDown(101)
+waitms(66 + $S_CORR)
+  keyUp(101)
+waitms(2121 + $S_CORR)
+ mouse_move(2871,968)
+waitms(87 + $S_CORR)
+  LCLICK(2871,968)//save
+waitms(2248 + $S_CORR)
+ mouse_move(2020,792)
+waitms(116 + $S_CORR)
+  LCLICK(2020,792)//click sell
+waitms(2621 + $S_CORR)
+ mouse_move(2863,746)
+waitms(110 + $S_CORR)
+  LCLICK(2863,746)//click sell
+waitms(2615 + $S_CORR)
+ mouse_move(3043,333)
+waitms(122 + $S_CORR)
+  LCLICK(3043,333)//close
+waitms(2261 + $S_CORR)
+ mouse_move(3013,112)
+waitms(112 + $S_CORR)
+  LCLICK(3013,112)//open settings
+waitms(2413 + $S_CORR)
+ mouse_move(3035,466)
+waitms(103 + $S_CORR)
+  LCLICK(3035,466)//switch off the lot trading
+waitms(3835 + $S_CORR)
+ mouse_move(2877,958)
+waitms(109 + $S_CORR)
+  LCLICK(2877,958)//save
+ mouse_move(3013,112)
+waitms(112 + $S_CORR)
+  LCLICK(3013,112)//open settings
+waitms(2413 + $S_CORR)
+ mouse_move(3047,603)
+waitms(103 + $S_CORR)
+  LCLICK(3047,603)//switch off the Use SL and TP for Market orders
+waitms(3835 + $S_CORR)
+ mouse_move(2877,958)
+waitms(109 + $S_CORR)
+  LCLICK(2877,958)//save
+waitms(2248 + $S_CORR)
+ mouse_move(2020,782)
+waitms(116 + $S_CORR)
+  LCLICK(2020,782)//click sell
+waitms(2621 + $S_CORR)
+ mouse_move(2863,744)
+waitms(110 + $S_CORR)
+  LCLICK(2863,744)//click sell
+waitms(2615 + $S_CORR)
+ mouse_move(3043,333)
+waitms(122 + $S_CORR)
+  LCLICK(3043,333)//close
+waitms(122 + $S_CORR)
+ mouse_move(3013,112)
+waitms(112 + $S_CORR)
+  LCLICK(3013,112)//open settings
+waitms(2413 + $S_CORR)
+ mouse_move(3047,603)
+waitms(103 + $S_CORR)
+  LCLICK(3047,603)//switch off the Use SL and TP for Market orders
+waitms(3835 + $S_CORR)
+ mouse_move(2877,958)
+waitms(109 + $S_CORR)
+  LCLICK(2877,958)//save
+waitms(1481 + $S_CORR)
+  mouse_move(3675,194)
+waitms(124 + $S_CORR)
+  RCLICK(3673,194) //right click on the chart
+waitms(1176 + $S_CORR)
+  mouse_move(3667,194)
+waitms(185 + $S_CORR)
+  LCLICK(3667,194)
+waitms(1693 + $S_CORR)
+  mouse_move(2875,808)
+waitms(130 + $S_CORR)
+  LCLICK(2875,808)  //click buy
+waitms(1353 + $S_CORR)
+  mouse_move(3045,333)
+waitms(94 + $S_CORR)
+  LCLICK(3045,333)  //click close
+waitms(1141 + $S_CORR)
+  mouse_move(3533,244)
+waitms(111 + $S_CORR)
+  RCLICK(3533,244)   //right click on the chart
+waitms(1314 + $S_CORR)
+  mouse_move(3617,230)
+waitms(136 + $S_CORR)
+  LCLICK(3617,230)
+waitms(1666 + $S_CORR)
+  mouse_move(2931,808)
+waitms(148 + $S_CORR)
+  LCLICK(2931,808)  //click sell
+waitms(1313 + $S_CORR)
+  mouse_move(3039,333)
+waitms(131 + $S_CORR)
+  LCLICK(3039,333)  //click close
+waitms(925 + $S_CORR)
+  mouse_move(3655,316)
+waitms(97 + $S_CORR)
+  RCLICK(3655,316)   //right click on the chart
+waitms(1458 + $S_CORR)
+  mouse_move(3561,264)
+waitms(136 + $S_CORR)
+  LCLICK(3561,264)
+waitms(3182 + $S_CORR)
+  mouse_move(3003,522)
+waitms(125 + $S_CORR)
+  DBLCLICK(3003,522)  //change the amount
+waitms(1394 + $S_CORR)
+  mouse_move(3003,536)
+waitms(110 + $S_CORR)
+  DBLCLICK(3003,536)  //change the amount
+waitms(1354 + $S_CORR)
+  mouse_move(3003,522)
+waitms(124 + $S_CORR)
+  LCLICK(3003,522)  //change the amount
+waitms(992 + $S_CORR)
+  mouse_move(2885,750)
+waitms(104 + $S_CORR)
+  LCLICK(2885,750)  //click sell
+waitms(2000 + $S_CORR)
+  mouse_move(3045,333)
+waitms(107 + $S_CORR)
+  LCLICK(3045,333)  //click close
+waitms(1932 + $S_CORR)
+  mouse_move(3035,344)
+waitms(142 + $S_CORR)
+  LCLICK(3035,344)
+waitms(1065 + $S_CORR)
+  mouse_move(3457,268)
+waitms(109 + $S_CORR)
+  RCLICK(3457,268)  // right click on the chart
+waitms(2498 + $S_CORR)
+  mouse_move(3533,286)
+waitms(144 + $S_CORR)
+  LCLICK(3533,286)  //create new market buy order
+waitms(1941 + $S_CORR)
+  mouse_move(3005,520)
+waitms(127 + $S_CORR)
+  LCLICK(3005,520)  //change the amount
+waitms(6569 + $S_CORR)
+  mouse_move(2753,588)
+waitms(129 + $S_CORR)
+  LCLICK(2753,588)  //off t/p
+waitms(1054 + $S_CORR)
+  mouse_move(3005,588)
+waitms(124 + $S_CORR)
+  LCLICK(3005,588)  //off s/l
+waitms(1811 + $S_CORR)
+  mouse_move(2915,746)
+waitms(123 + $S_CORR)
+  LCLICK(2915,746)  //click buy
+waitms(1992 + $S_CORR)
+  mouse_move(3039,333)
+waitms(123 + $S_CORR)
+  LCLICK(3039,333)  //click close  
+waitms(2248 + $S_CORR)  
+//position, modify and close orders
+waitms(500 + $S_CORR)
+  mouse_move(2487,735)
+waitms(2438 + $S_CORR)
+LCLICK(2487,735)//click the positions
+waitms(2469 + $S_CORR)
+  mouse_move(3687,806)
+waitms(110 + $S_CORR)
+  LCLICK(3687,814)//click visible/invisible order
+waitms(1722 + $S_CORR)
+  mouse_move(3687,862)
+waitms(94 + $S_CORR)
+  LCLICK(3687,862)//click visible/invisible order
+waitms(3067 + $S_CORR)
+  mouse_move(3685,862)
+waitms(100 + $S_CORR)
+  LCLICK(3685,862)//click visible/invisible order
+waitms(1333 + $S_CORR)
+  mouse_move(3717,864)
+waitms(106 + $S_CORR)
+  LCLICK(3723,862)//click modify order
+waitms(2504 + $S_CORR)
+  mouse_move(2919,500)
+waitms(77 + $S_CORR)
+  DBLCLICK(2919,500)//change s/l
+waitms(269 + $S_CORR)
+  DBLCLICK(2919,500)//change s/l
+waitms(231 + $S_CORR)
+  DBLCLICK(2919,500)//change s/l
+waitms(1787 + $S_CORR)
+  mouse_move(2955,618)
+waitms(91 + $S_CORR)
+  DBLCLICK(2955,618)//change t/p
+waitms(177 + $S_CORR)
+  DBLCLICK(2955,618)//change t/p
+waitms(162 + $S_CORR)
+  DBLCLICK(2955,618)//change t/p
+waitms(1614 + $S_CORR)
+  mouse_move(2889,808)
+waitms(84 + $S_CORR)
+  LCLICK(2889,808)//click modify
+waitms(1560 + $S_CORR)
+  mouse_move(3805,814)
+waitms(119 + $S_CORR)
+  LCLICK(3805,814)//click close order
+waitms(1507 + $S_CORR)
+  mouse_move(2889,689)
+waitms(98 + $S_CORR)
+  LCLICK(2889,689)//click close
+waitms(1507 + $S_CORR)			   
+mouse_move(3790,744)// move to "to close..."
+waitms(980 + $S_CORR)
+   LCLICK(3790,744)
+      waitms(1500 + $S_CORR)
+mouse_move(3789,777)
+waitms(980 + $S_CORR)
+  LCLICK(3789,777)//click close all trades
+waitms(1507 + $S_CORR)
+mouse_move(2785,615)
+waitms(980 + $S_CORR)
+  LCLICK(2785,615)//click yes
+waitms(1507 + $S_CORR)
+mouse_move(2585,735)
+waitms(2980 + $S_CORR)
+  LCLICK(2585,735)//click pending orders
+waitms(1507 + $S_CORR)
+mouse_move(3777,740)
+waitms(980 + $S_CORR)  
+	LCLICK(3777,740)//click cancel pendings
+waitms(1507 + $S_CORR)			   
+mouse_move(2785,615)
+waitms(980 + $S_CORR)
+  LCLICK(2785,615)//click yes
+waitms(1507 + $S_CORR)
+//logout	
+waitms(3500 + $S_CORR)
+mouse_move(3777,112)//mouse_move the cursor to the current account’s login name 
+waitms(1507 + $S_CORR)
+   LCLICK(3777,112)  //click to the cursor to the current account’s login name 
+      waitms(3500 + $S_CORR)
+mouse_move(3750,160)
+      waitms(500 + $S_CORR)     
+   LCLICK(3750,160)   //logout																	 
