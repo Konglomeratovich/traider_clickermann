@@ -1,4 +1,4 @@
-# FDCTest
+# TraiderTest
 
 This project automates various actions on a web trading platform using Clickermann scripts. The script performs tasks such as logging in, changing themes, navigating through user menus, placing and modifying orders, and logging out.
 
