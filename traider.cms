@@ -1,4 +1,4 @@
-﻿// 02.01.2025
+﻿// 03.01.2025 v1.0.2
 #name "FDCTest"
 #include "MOVE.cms"
 #include "FDCTest_Login.cms"
@@ -26,142 +26,151 @@ mouse_move(3626,153)
    LCLICK(3626,153)   //click dark theme
        waitms(3500 + $S_CORR)
    KEYPRESS(#F5)      //Reload page
-//проходимся по меню пользователя
-//user menu section
+//navigate through user menu
       waitms(3000 + $S_CORR)
 mouse_move(2528,112)
       waitms(3000 + $S_CORR)
 		LCLICK(2528,112)   //click the sell market
       waitms(1500 + $S_CORR)
-mouse_move(2760,350)
+mouse_move(2760,278)
       waitms(1500 + $S_CORR)   	
-		 LCLICK(2760,350)    //click symbol
+		 LCLICK(2760,278)    //click symbol
       waitms(1500 + $S_CORR)   	
-		 LCLICK(2760,350)    //click symbol 
+		 LCLICK(2760,278)    //click symbol 
       waitms(1500 + $S_CORR)		      
-mouse_move(2949,420)
+mouse_move(2949,350)
       waitms(1500 + $S_CORR)   	
-		 LCLICK(2949,420)    //click buy	 		 
+		 LCLICK(2949,350)    //click buy	 		 
       waitms(1500 + $S_CORR)
-mouse_move(2806,420)
+mouse_move(2806,350)
       waitms(1500 + $S_CORR)      
-   	LCLICK(2806,420)    //click sell
+   	LCLICK(2806,350)    //click sell
       waitms(1500 + $S_CORR)
-   	DBLCLICK(2821,617)    //change t/p
+   	DBLCLICK(2821,686)    //change t/p
       	waitms(200 + $S_CORR)
-   	DBLCLICK(2821,617)    //change t/p
+   	DBLCLICK(2821,686)    //change t/p
       waitms(1500 + $S_CORR)
-		DBLCLICK(3000,617)    //change s/l
+		DBLCLICK(3000,686)    //change s/l
       	waitms(200 + $S_CORR)		
-   	DBLCLICK(3000,617)    //change s/l
+   	DBLCLICK(3000,686)    //change s/l
 		  waitms(1500 + $S_CORR)
-mouse_move(2876,750)
+mouse_move(2876,820)
       waitms(2000 + $S_CORR)
-		LCLICK(2876,750)   //click sell
+		LCLICK(2876,820)   //click sell
       waitms(1500 + $S_CORR)		  
-mouse_move(2876,461)
+mouse_move(2876,391)
       waitms(3000 + $S_CORR)
-		LCLICK(2876,461)   //click limit
+		LCLICK(2876,391)   //click limit
       waitms(1500 + $S_CORR)
-		DBLCLICK(2865,465)    //change open price
+		DBLCLICK(2865,391)    //change open price
       waitms(200 + $S_CORR)
-   	DBLCLICK(2865,465)    //change open price
+   	DBLCLICK(2865,391)    //change open price
       waitms(1000 + $S_CORR)
-mouse_move(2945,470)  	
+mouse_move(2945,400)  	
       waitms(1500 + $S_CORR)
-		LCLICK(2945,470)      //change bid
+		LCLICK(2945,400)      //change bid
 		  waitms(1500 + $S_CORR)
-mouse_move(2950,703)  	
+mouse_move(2950,630)  	
       waitms(1500 + $S_CORR)
-		LCLICK(2950,703)      //bid+3
+		LCLICK(2950,630)      //bid+3
+		  waitms(1500 + $S_CORR)
+mouse_move(2886,880)  	
+      waitms(1500 + $S_CORR)
+		LCLICK(2886,880)      //click sell
 		  waitms(1500 + $S_CORR)			    
-mouse_move(2968,403)
+mouse_move(2968,333)
       waitms(2000 + $S_CORR)
-		LCLICK(2968,403)   //click stop
+		LCLICK(2968,333)   //click stop
       waitms(1500 + $S_CORR)
-mouse_move(2793,403)
+mouse_move(2793,333)
       waitms(2000 + $S_CORR)
-		LCLICK(2793,403)   //click market
+		LCLICK(2793,333)   //click market
       waitms(1500 + $S_CORR)						      				        
-mouse_move(3040,330)
+mouse_move(3040,261)
       waitms(2000 + $S_CORR)
-		LCLICK(3040,330)   //close the sell market
-      waitms(1500 + $S_CORR)   
+		LCLICK(3040,261)   //close the sell market
+      waitms(1500 + $S_CORR)
 mouse_move(2661,112)
       waitms(2000 + $S_CORR)
 		LCLICK(2661,112)   //click the buy market
-      waitms(1500 + $S_CORR)
-mouse_move(2760,350)
+      waitms(1500 + $S_CORR)      
+mouse_move(2760,278)
       waitms(1500 + $S_CORR)   	
-		 LCLICK(2760,350)    //click symbol
+		 LCLICK(2760,278)    //click symbol
       waitms(1500 + $S_CORR)   	
-		 LCLICK(2760,350)    //click symbol
+		 LCLICK(2760,278)    //click symbol 
+      waitms(1500 + $S_CORR)		      
+mouse_move(2806,350)
+      waitms(1500 + $S_CORR)   	
+		 LCLICK(2806,350)    //click sell	 		 
       waitms(1500 + $S_CORR)
-mouse_move(2806,420)
-      waitms(1500 + $S_CORR)					        
-		LCLICK(2806,420)    //click sell
+mouse_move(2949,350)
+      waitms(1500 + $S_CORR)      
+   	LCLICK(2949,350)    //click buy
       waitms(1500 + $S_CORR)
-   LCLICK(2949,420)    //click buy
-      waitms(1500 + $S_CORR)
-   	DBLCLICK(2821,617)    //change t/p
+   	DBLCLICK(2821,686)    //change t/p
       	waitms(200 + $S_CORR)
-   	DBLCLICK(2821,617)    //change t/p
+   	DBLCLICK(2821,686)    //change t/p
       waitms(1500 + $S_CORR)
-		DBLCLICK(3000,617)    //change s/l
+		DBLCLICK(3000,686)    //change s/l
       	waitms(200 + $S_CORR)		
-   	DBLCLICK(3000,617)    //change s/l
+   	DBLCLICK(3000,686)    //change s/l
 		  waitms(1500 + $S_CORR)
-mouse_move(2876,750)
+mouse_move(2876,820)
       waitms(2000 + $S_CORR)
-		LCLICK(2876,750)   //click buy
-     waitms(2000 + $S_CORR)
-mouse_move(2876,461)
+		LCLICK(2876,820)   //click sell
+      waitms(1500 + $S_CORR)		  
+mouse_move(2876,391)
       waitms(3000 + $S_CORR)
-		LCLICK(2876,461)   //click limit
+		LCLICK(2876,391)   //click limit
       waitms(1500 + $S_CORR)
-		DBLCLICK(2865,465)    //change open price
+		DBLCLICK(2865,406)    //change open price
       waitms(200 + $S_CORR)
-   	DBLCLICK(2865,465)    //change open price
+   	DBLCLICK(2865,406)    //change open price
       waitms(1000 + $S_CORR)
-mouse_move(2945,470)  	
+mouse_move(2945,400)  	
       waitms(1500 + $S_CORR)
-		LCLICK(2945,470)      //change ask
+		LCLICK(2945,400)      //change ask
 		  waitms(1500 + $S_CORR)
-mouse_move(2950,703)  	
+mouse_move(2950,455)  	
       waitms(1500 + $S_CORR)
-		LCLICK(2950,703)      //ask+3
+		LCLICK(2950,455)      //ask -3
+		  waitms(1500 + $S_CORR)
+mouse_move(2886,880)  	
+      waitms(1500 + $S_CORR)
+		LCLICK(2886,880)      //click sell
 		  waitms(1500 + $S_CORR)			    
-mouse_move(2968,403)
+mouse_move(2968,333)
       waitms(2000 + $S_CORR)
-		LCLICK(2968,403)   //click stop
+		LCLICK(2968,333)   //click stop
       waitms(1500 + $S_CORR)
-mouse_move(2793,403)
+mouse_move(2793,333)
       waitms(2000 + $S_CORR)
-		LCLICK(2793,403)   //click market
+		LCLICK(2793,333)   //click market
       waitms(1500 + $S_CORR)						      				        
-mouse_move(3040,330)
+mouse_move(3040,261)
       waitms(2000 + $S_CORR)
-		LCLICK(3040,330)   //close the buy market
+		LCLICK(3040,261)   //close the sell market
       waitms(1500 + $S_CORR)
 mouse_move(2794,112)
       waitms(2000 + $S_CORR)
 		LCLICK(2794,112)   //click to the pending
       waitms(1500 + $S_CORR)
-mouse_move(2862,465)
+mouse_move(2862,405)
       waitms(2000 + $S_CORR)
-		DBLCLICK(2862,475)   //open price down
+		DBLCLICK(2862,405)   //open price down
 		waitms(500 + $S_CORR)
-		DBLCLICK(2862,475)   //open price down
+		DBLCLICK(2862,405)   //open price down
 		waitms(500 + $S_CORR)
-		DBLCLICK(2862,475)   //open price down
+		DBLCLICK(2862,405)   //open price down
 		waitms(500 + $S_CORR)		
-mouse_move(2878,805)
+mouse_move(2878,882)
       waitms(2000 + $S_CORR)
-		LCLICK(2878,805)   //click buy
+		LCLICK(2878,882)   //click buy
       waitms(1500 + $S_CORR)
-mouse_move(3040,280)
+mouse_move(3040,206)
       waitms(2000 + $S_CORR)
-		LCLICK(3040,280)   //close the pending	  
+		LCLICK(3040,206)   //close the pending	  
 mouse_move(3151,112)
       waitms(2000 + $S_CORR)
 		LCLICK(3151,112)   //click on the layot
@@ -773,13 +782,13 @@ waitms(2708 + $S_CORR)
 waitms(104 + $S_CORR)
   LCLICK(2183,416)//click buy
 waitms(4239 + $S_CORR)
- mouse_move(2851,750)
+ mouse_move(2881,820)
 waitms(108 + $S_CORR)
-  LCLICK(2851,750)//click buy
+  LCLICK(2881,820)//click buy
 waitms(7429 + $S_CORR)
- mouse_move(3037,333)
+ mouse_move(3037,263)
 waitms(117 + $S_CORR)
-  LCLICK(3037,333)//click close
+  LCLICK(3037,263)//click close
 waitms(1761 + $S_CORR)
  mouse_move(3017,112)
 waitms(115 + $S_CORR)
@@ -829,9 +838,9 @@ waitms(2500 + $S_CORR)
 waitms(88 + $S_CORR)
   LCLICK(2480,735)//move to the positions
 waitms(2886 + $S_CORR)
- mouse_move(3810,815)
+ mouse_move(3806,815)
 waitms(88 + $S_CORR)
-  LCLICK(3810,815)//click to close order
+  LCLICK(3806,815)//click to close order
 waitms(2886 + $S_CORR)
  mouse_move(3011,112)
 waitms(88 + $S_CORR)
@@ -901,13 +910,13 @@ waitms(1164 + $S_CORR)
 waitms(110 + $S_CORR)
   LCLICK(2187,786)//click buy
 waitms(6935 + $S_CORR)
- mouse_move(2859,744)
+ mouse_move(2887,820)
 waitms(140 + $S_CORR)
-  LCLICK(2859,744)//click buy
+  LCLICK(2887,820)//click buy
 waitms(4584 + $S_CORR)
- mouse_move(3041,333)
+ mouse_move(3041,263)
 waitms(118 + $S_CORR)
-  LCLICK(3041,333)//click close
+  LCLICK(3041,263)//click close
 waitms(2422 + $S_CORR)
  mouse_move(3023,112)
 waitms(113 + $S_CORR)
@@ -961,13 +970,13 @@ waitms(2248 + $S_CORR)
 waitms(116 + $S_CORR)
   LCLICK(2020,792)//click sell
 waitms(2621 + $S_CORR)
- mouse_move(2863,746)
+ mouse_move(2887,820)
 waitms(110 + $S_CORR)
-  LCLICK(2863,746)//click sell
+  LCLICK(2887,820)//click sell
 waitms(2615 + $S_CORR)
- mouse_move(3043,333)
+ mouse_move(3043,263)
 waitms(122 + $S_CORR)
-  LCLICK(3043,333)//close
+  LCLICK(3043,263)//close
 waitms(2261 + $S_CORR)
  mouse_move(3013,112)
 waitms(112 + $S_CORR)
@@ -996,13 +1005,13 @@ waitms(2248 + $S_CORR)
 waitms(116 + $S_CORR)
   LCLICK(2020,782)//click sell
 waitms(2621 + $S_CORR)
- mouse_move(2863,744)
+ mouse_move(2887,820)
 waitms(110 + $S_CORR)
-  LCLICK(2863,744)//click sell
+  LCLICK(2887,820)//click sell
 waitms(2615 + $S_CORR)
- mouse_move(3043,333)
+ mouse_move(3043,263)
 waitms(122 + $S_CORR)
-  LCLICK(3043,333)//close
+  LCLICK(3043,263)//close
 waitms(122 + $S_CORR)
  mouse_move(3013,112)
 waitms(112 + $S_CORR)
@@ -1024,13 +1033,13 @@ waitms(1176 + $S_CORR)
 waitms(185 + $S_CORR)
   LCLICK(3667,194)
 waitms(1693 + $S_CORR)
-  mouse_move(2875,808)
+  mouse_move(2875,878)
 waitms(130 + $S_CORR)
-  LCLICK(2875,808)  //click buy
+  LCLICK(2875,878)  //click buy
 waitms(1353 + $S_CORR)
-  mouse_move(3045,333)
+  mouse_move(3045,206)
 waitms(94 + $S_CORR)
-  LCLICK(3045,333)  //click close
+  LCLICK(3045,206)  //click close
 waitms(1141 + $S_CORR)
   mouse_move(3533,244)
 waitms(111 + $S_CORR)
@@ -1040,13 +1049,13 @@ waitms(1314 + $S_CORR)
 waitms(136 + $S_CORR)
   LCLICK(3617,230)
 waitms(1666 + $S_CORR)
-  mouse_move(2931,808)
+  mouse_move(2931,878)
 waitms(148 + $S_CORR)
-  LCLICK(2931,808)  //click sell
+  LCLICK(2931,878)  //click sell
 waitms(1313 + $S_CORR)
-  mouse_move(3039,333)
+  mouse_move(3039,206)
 waitms(131 + $S_CORR)
-  LCLICK(3039,333)  //click close
+  LCLICK(3039,206)  //click close
 waitms(925 + $S_CORR)
   mouse_move(3655,316)
 waitms(97 + $S_CORR)
@@ -1056,25 +1065,25 @@ waitms(1458 + $S_CORR)
 waitms(136 + $S_CORR)
   LCLICK(3561,264)
 waitms(3182 + $S_CORR)
-  mouse_move(3003,522)
+  mouse_move(3003,450)
 waitms(125 + $S_CORR)
-  DBLCLICK(3003,522)  //change the amount
+  DBLCLICK(3003,450)  //change the amount
 waitms(1394 + $S_CORR)
-  mouse_move(3003,536)
+  mouse_move(3003,450)
 waitms(110 + $S_CORR)
-  DBLCLICK(3003,536)  //change the amount
+  DBLCLICK(3003,450)  //change the amount
 waitms(1354 + $S_CORR)
-  mouse_move(3003,522)
+  mouse_move(3003,465)
 waitms(124 + $S_CORR)
-  LCLICK(3003,522)  //change the amount
+  LCLICK(3003,465)  //change the amount
 waitms(992 + $S_CORR)
-  mouse_move(2885,750)
+  mouse_move(2885,820)
 waitms(104 + $S_CORR)
-  LCLICK(2885,750)  //click sell
+  LCLICK(2885,820)  //click sell
 waitms(2000 + $S_CORR)
-  mouse_move(3045,333)
+  mouse_move(3045,263)
 waitms(107 + $S_CORR)
-  LCLICK(3045,333)  //click close
+  LCLICK(3045,263)  //click close
 waitms(1932 + $S_CORR)
   mouse_move(3035,344)
 waitms(142 + $S_CORR)
@@ -1088,25 +1097,25 @@ waitms(2498 + $S_CORR)
 waitms(144 + $S_CORR)
   LCLICK(3533,286)  //create new market buy order
 waitms(1941 + $S_CORR)
-  mouse_move(3005,520)
+  mouse_move(3005,450)
 waitms(127 + $S_CORR)
-  LCLICK(3005,520)  //change the amount
+  LCLICK(3005,450)  //change the amount
 waitms(6569 + $S_CORR)
-  mouse_move(2753,588)
+  mouse_move(2753,660)
 waitms(129 + $S_CORR)
-  LCLICK(2753,588)  //off t/p
+  LCLICK(2753,660)  //off t/p
 waitms(1054 + $S_CORR)
-  mouse_move(3005,588)
+  mouse_move(3005,660)
 waitms(124 + $S_CORR)
-  LCLICK(3005,588)  //off s/l
+  LCLICK(3005,660)  //off s/l
 waitms(1811 + $S_CORR)
-  mouse_move(2915,746)
+  mouse_move(2915,820)
 waitms(123 + $S_CORR)
-  LCLICK(2915,746)  //click buy
+  LCLICK(2915,820)  //click buy
 waitms(1992 + $S_CORR)
-  mouse_move(3039,333)
+  mouse_move(3039,263)
 waitms(123 + $S_CORR)
-  LCLICK(3039,333)  //click close  
+  LCLICK(3039,263)  //click close  
 waitms(2248 + $S_CORR)  
 //position, modify and close orders
 waitms(500 + $S_CORR)
@@ -1114,21 +1123,21 @@ waitms(500 + $S_CORR)
 waitms(2438 + $S_CORR)
 LCLICK(2487,735)//click the positions
 waitms(2469 + $S_CORR)
-  mouse_move(3687,806)
+  mouse_move(3683,806)
 waitms(110 + $S_CORR)
-  LCLICK(3687,814)//click visible/invisible order
+  LCLICK(3683,814)//click visible/invisible order
 waitms(1722 + $S_CORR)
-  mouse_move(3687,862)
+  mouse_move(3683,862)
 waitms(94 + $S_CORR)
-  LCLICK(3687,862)//click visible/invisible order
+  LCLICK(3683,862)//click visible/invisible order
 waitms(3067 + $S_CORR)
   mouse_move(3685,862)
 waitms(100 + $S_CORR)
   LCLICK(3685,862)//click visible/invisible order
 waitms(1333 + $S_CORR)
-  mouse_move(3717,864)
+  mouse_move(3721,816)
 waitms(106 + $S_CORR)
-  LCLICK(3723,862)//click modify order
+  LCLICK(3721,816)//click modify order
 waitms(2504 + $S_CORR)
   mouse_move(2919,500)
 waitms(77 + $S_CORR)
